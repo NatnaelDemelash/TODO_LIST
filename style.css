@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Abel", sans-serif;
+    background: #CACFD2;
+}
+
+header {
+    font-size: 1.3rem;
+}
+
+header,
+form {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+button {
+    padding: .7rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    font-family: "Dosis", sans-serif;
+    background: #fff;
+}
+
+button {
+    cursor: pointer;
+    color: #8E44AD;
+}
