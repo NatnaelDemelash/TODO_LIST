@@ -1,37 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@400;700&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Abel", sans-serif;
-    background: #CACFD2;
+  font-family: "Abel", sans-serif;
+  background: #2b6a75e9;
+  color: #fff;
 }
 
 header {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 header,
 form {
-    min-height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form input,
 button {
-    padding: .7rem 1rem;
-    font-size: 1.2rem;
-    border: none;
-    font-family: "Dosis", sans-serif;
-    background: #fff;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  font-family: "Dosis", sans-serif;
+  background: #fff;
+}
+
+.todo-input {
+  min-width: 30%;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
 
 button {
-    cursor: pointer;
-    color: #8E44AD;
+  cursor: pointer;
+  color: #8e44ad;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: #fff;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+  font-weight: bold;
+}
+
+.trash-btn,
+.completed-btn {
+  background: #ff6f47;
+  color: #fff;
+  border: none;
+  margin: 5px;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.completed-btn {
+  background: rgb(73, 204, 73);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.fall {
+  transform: translateY(8rem) rotate(25deg);
+}
+
+.select {
+  margin: 0 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  padding: 1rem;
+  width: 12rem;
+  cursor: pointer;
+  border: none;
+}
+
+.select .filiter-todo {
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Dosis", sans-serif;
 }
